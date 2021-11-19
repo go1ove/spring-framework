@@ -25,3 +25,15 @@ org.springframework.context.support.AbstractRefreshableApplicationContext.loadBe
                                             org.springframework.beans.factory.support.BeanDefinitionReaderUtils.registerBeanDefinition
                                                 org.springframework.beans.factory.support.DefaultListableBeanFactory.registerBeanDefinition
 
+
+
+循环依赖：
+beanA依赖beanB、beanB又依赖beanC、beanC又依赖beanA
+
+ioc:
+控制反转
+将原本由手动创建bean的权利交由spring去管理
+
+aop:
+面向切面
+本质：在不改变原有的业务逻辑的情况下增强横切逻辑
